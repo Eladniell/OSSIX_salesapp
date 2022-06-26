@@ -14,7 +14,7 @@
         <options>
           <option name="title_enabled" value="false">
             <options>
-              <option name="title_text" value="OSSIX Sales App_220622" />
+              <option name="title_text" value="OSSIX Sales App" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
@@ -1188,14 +1188,21 @@
       <string id="accessible_text">Accessible text</string>
       <string id="keyboardshortcuts_lower">Keyboard shortcuts</string>
       <string id="zoom_to_fit">Zoom to fit</string>
-      <string id="acc_modern_video_captions">video captions</string>
+      <string id="modern_video_settings_close">close video settings</string>
+      <string id="acc_modern_video_fullscreen">fullscreen</string>
+      <string id="modern_video_playback_settings">playback settings</string>
+      <string id="modern_video_captions_off">off</string>
+      <string id="modern_video_captions_on">on</string>
+      <string id="modern_video_captions_label">captions</string>
+      <string id="acc_modern_video_settings">video settings</string>
       <string id="acc_modern_video_mute">mute video</string>
+      <string id="modern_video_normal_speed">Normal</string>
       <string id="acc_modern_video_pause">pause video</string>
       <string id="acc_modern_video_pip">Picture-in-Picture</string>
       <string id="acc_modern_video_play">play video</string>
-      <string id="modern_video_playback_settings">playback settings</string>
+      <string id="modern_video_playback_speed_title">Playback speed</string>
+      <string id="acc_modern_video_captions">video captions</string>
       <string id="acc_modern_video_playback_speed">Playback speed</string>
-      <string id="acc_modern_video_settings">video settings</string>
       <string id="acc_modern_video_volume">video volume</string>
       <string id="acc_active">active</string>
       <string id="alt_key">Alt</string>
@@ -1236,13 +1243,6 @@
       <string id="disabled_orientation">Please rotate your device</string>
       <string id="progress_minute">minute</string>
       <string id="progress_minutes">minutes</string>
-      <string id="acc_modern_video_fullscreen">fullscreen</string>
-      <string id="modern_video_captions_label">captions</string>
-      <string id="modern_video_captions_off">off</string>
-      <string id="modern_video_captions_on">on</string>
-      <string id="modern_video_normal_speed">Normal</string>
-      <string id="modern_video_playback_speed_title">Playback speed</string>
-      <string id="modern_video_settings_close">close video settings</string>
       <string id="mute_tip">Mute</string>
       <string id="next">NEXT</string>
       <string id="acc_next">next</string>

@@ -2,19 +2,19 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6J8B2gnlW1J":
+      case "6BXbHfkn8no":
         Script1();
         break;
-      case "5rFCCX6ObvH":
+      case "6rIVXAMSi4N":
         Script2();
         break;
-      case "6AlMp5sCsd1":
+      case "6LQiR8Mgl7W":
         Script3();
         break;
-      case "6idEIeTw6LF":
+      case "6bGSd8M9uTt":
         Script4();
         break;
-      case "5hBLkOIbysk":
+      case "5pWIOO86rYo":
         Script5();
         break;
   }
@@ -24,22 +24,23 @@ function Script1()
 {
   var player=GetPlayer();
 var pagetitle=player.GetVar("PageTitle");
-ga('send', 'screenview', {screenName: 'PageTitle'});
+gtag('event', 'page_view', {page_title: 'PageTitle'});
+gtag('config', 'page_view', {page_title: 'PageTitle'});
 }
 
 function Script2()
 {
-  ga('send', 'event', 'Button', 'click', 'OSSIX Bone');
+  gtag('send', 'event', 'Button', 'click', 'OSSIX Bone');
 }
 
 function Script3()
 {
-  ga('send', 'event', 'Button', 'click', 'OSSIX Volumax');
+  gtag('send', 'event', 'Button', 'click', 'OSSIX Volumax');
 }
 
 function Script4()
 {
-  ga('send', 'event', 'Button', 'click', 'OSSIX Plus');
+  ga('config', 'event', 'Button', 'click', 'OSSIX Plus');
 }
 
 function Script5()
