@@ -2,119 +2,122 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "68DFgcqHU57":
+      case "5cnMm3HTMtU":
         Script1();
         break;
-      case "6MDz71MIgFx":
+      case "6XD67njRoDb":
         Script2();
         break;
-      case "69wCAcgtOKd":
+      case "5yyfgKxCpLw":
         Script3();
         break;
-      case "5YkPcenYUzX":
+      case "5rp8XxUOlQA":
         Script4();
         break;
-      case "6625MxlOpWj":
+      case "6Oxko5qw6Jj":
         Script5();
         break;
-      case "6X2fKTOsrVM":
+      case "662gVzqDbG4":
         Script6();
         break;
-      case "636sKdZCIEu":
+      case "5opWn5LenM3":
         Script7();
         break;
-      case "5efWg52vPiC":
+      case "6hwrqVLZxuz":
         Script8();
         break;
-      case "5piY6tUFfH0":
+      case "5YyUe2PEVnM":
         Script9();
         break;
-      case "6VMIKOvv6uC":
+      case "6cH5FQlmC56":
         Script10();
         break;
-      case "6PLYoNJfZyf":
+      case "5p4zqionuZV":
         Script11();
         break;
-      case "5fCqhjDkBCN":
+      case "5ektOePCOw2":
         Script12();
         break;
-      case "5wmOqseq4xp":
+      case "6XgVitdOlcZ":
         Script13();
         break;
-      case "5woduCRpvjL":
+      case "6jkpa14RJP9":
         Script14();
         break;
-      case "5hLqDM1LbzJ":
+      case "6Z2U1PbyfPg":
         Script15();
         break;
-      case "68FOjzMPsEO":
+      case "6PbGHUIXgLv":
         Script16();
         break;
-      case "64Oc5TAVEyD":
+      case "5nxb7PJaIpo":
         Script17();
         break;
-      case "6ZdtCsTEjW0":
+      case "6LAjempsgWm":
         Script18();
         break;
-      case "6ZIQCM7O2Vx":
+      case "68uhCwR57sF":
         Script19();
         break;
-      case "6GpmbMJ1krk":
+      case "6IOelDE1MKp":
         Script20();
         break;
-      case "6X91aM9Zfce":
+      case "6M5j3zIzoIW":
         Script21();
         break;
-      case "6X2IUNPcLZq":
+      case "6EZE9HFSvGu":
         Script22();
         break;
-      case "5l3HHLxpBtK":
+      case "6rc1l1Syd0g":
         Script23();
         break;
-      case "637l8yfTJwT":
+      case "5zy16G8DYVA":
         Script24();
         break;
-      case "6i1t8shEi2C":
+      case "6NssZx8iMQF":
         Script25();
         break;
-      case "6g1GJ4pVYGi":
+      case "6lYz59eIBzd":
         Script26();
         break;
-      case "6eYkAiuIA4r":
+      case "6fKRjNh9zBw":
         Script27();
         break;
-      case "6huhhTpMmDo":
+      case "6WQ8vGgZrXd":
         Script28();
         break;
-      case "5e8iJBDUVw1":
+      case "6UqXgMgVZOZ":
         Script29();
         break;
-      case "6PWxpQhVRk6":
+      case "6JG7D9bFd00":
         Script30();
         break;
-      case "6LCNC5gsw3l":
+      case "6jpKpw9ALVz":
         Script31();
         break;
-      case "6iHUpjZCcQ1":
+      case "636darSuElK":
         Script32();
         break;
-      case "6XLCuZgZaEO":
+      case "6eWS44Th9lG":
         Script33();
         break;
-      case "6IkiNC0CHVV":
+      case "6M8wNDwwFxs":
         Script34();
         break;
-      case "6dJe4SJYq2E":
+      case "5g4RpjAyRIm":
         Script35();
         break;
-      case "6IbeL1wPFup":
+      case "5kb5OnJI6GZ":
         Script36();
         break;
-      case "6FKs21ftc3q":
+      case "5cGJpTWY0pU":
         Script37();
         break;
-      case "6nH4de1eLon":
+      case "6OJx9MQ84o8":
         Script38();
+        break;
+      case "5VhaGFvj8Ob":
+        Script39();
         break;
   }
 }
@@ -378,5 +381,90 @@ function Script37()
 function Script38()
 {
   ga('send', 'event', 'Button', 'click', 'GLYMATRIX');
+}
+
+function Script39()
+{
+  
+var player = GetPlayer();
+
+
+var allArreyFound="";
+
+
+var Counter=0;
+
+
+var parameters = player.GetVar("searchfield").toLowerCase();
+
+
+player.SetVar('goal1', "");
+player.SetVar('goal2', "");
+player.SetVar('goal3', "");
+player.SetVar('goal4', "");
+player.SetVar('noResult', "");
+
+
+var key1= ['word','טבלאות','עקרונות'];
+var key2=['עיצוב', 'עקרונות' ,'פסקאות'];
+var key3= ['טבלאות','עקרונות' ,'outlook'];
+var key4=['טבלאות','עקרונות' ,'powerpoint'];
+
+
+for (var i = 0; i < key1.length; i++) {
+
+    if (parameters.includes(key1[i]) && allArreyFound.includes("key1")==false)
+   {
+     allArreyFound=allArreyFound+"key1"+" ";
+     Counter++;
+    player.SetVar('CounerTB',Counter);
+    }
+}
+for (var i = 0; i < key2.length; i++) {
+    if (parameters.includes(key2[i]) && allArreyFound.includes("key2")==false ) 
+   {
+       allArreyFound=allArreyFound+"key2"+" ";
+          Counter++;
+    player.SetVar('CounerTB',Counter);
+    }
+}
+
+for (var i = 0; i < key3.length; i++) {
+    if (parameters.includes(key3[i]) && allArreyFound.includes("key3")==false) 
+   {
+          allArreyFound=allArreyFound+"key3"+" ";
+           Counter++;
+    player.SetVar('CounerTB',Counter);
+    }
+}
+
+for (var i = 0; i < key4.length; i++) {
+    if (parameters.includes(key4[i]) && allArreyFound.includes("key4")==false)
+   {
+          allArreyFound=allArreyFound+"key4"+" ";
+         Counter++;
+    player.SetVar('CounerTB',Counter);
+    }
+}
+
+
+ArreyKeys =  allArreyFound.split(" ");
+
+
+if(ArreyKeys.length==1){
+   player.SetVar('noResult' ,"אין תוצאות. בבקשה נסו מילות מפתח אחרות" ); 
+   player.SetVar('cleanResult', true)
+}
+
+else{
+
+ for(var i=0; i <ArreyKeys.length; i++ )
+    {
+      player.SetVar('goal'+(i+1) ,ArreyKeys[i] );  
+      player.SetVar('cleanResult', false)
+    }
+}
+
+
 }
 
