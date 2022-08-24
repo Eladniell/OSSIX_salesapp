@@ -1,10 +1,10 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
   <!-- Created using Storyline 360 - http://www.articulate.com  -->
-  <!-- version: 3.66.28355.0 -->
-  <title>OSSIX Sales App</title>
+  <!-- version: 3.67.28569.0 -->
+  <title>OSSIX Sales App_240822</title>
   <meta http-equiv="x-ua-compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,shrink-to-fit=no,minimal-ui"/>
   <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -28,17 +28,18 @@
       captureRc: false,
       browserSize: 'optimal',
       bgColor: '#282828',
-      features: 'AccessibleVideo,IE11Warning,InsertSvgPicture,LayerPresentAsDialog,MultipleQuizTracking,QuestionCorrectVariable,UpdatedThemeEditor',
+      features: 'AccessibleVideo,FullScreenToggle,IE11Warning,InsertSvgPicture,LayerPresentAsDialog,MultipleQuizTracking,QuestionCorrectVariable,UpdatedThemeEditor',
       themeName: 'unified',
       preloaderColor: '#FFFFFF',
       suppressAnalytics: false,
       productChannel: 'stable',
       publishSource: 'storyline',
       aid: 'aid|ae7cc9e4-ac5b-4a34-b0e5-c08dfdb17208',
-      cid: 'ae05e745-3632-461d-833b-95049115d544',
-      playerVersion: '3.66.28355.0',
-      publishTimestamp: '2022-08-15T14:13:18.2279401Z',
+      cid: 'a3e51df3-0d64-404f-85fe-953d0617dc8d',
+      playerVersion: '3.67.28569.0',
+      publishTimestamp: '2022-08-24T13:14:41.0177932Z',
       maxIosVideoElements: 10,
+      connectionSettings: { },
 
       
       parseParams: function(qs) {
@@ -130,21 +131,15 @@
   </script>
 
   <div class="mobile-load-title-overlay" style="display: none">
-    <div class="mobile-load-title">OSSIX Sales App</div>
+    <div class="mobile-load-title">OSSIX Sales App_240822</div>
   </div>
 
   <div class="mobile-chrome-warning"></div>
 
-  <div class="warn-connection-dialog" style="display:none">
-  <div class="warn-connection-content">
-    <p>Internet connection lost</p>
-    <p class="warn-connection-status"></p>
-    <div class="warn-ui"></div>
-  </div>
-</div>
-
+  
 <style>
   .warn-connection-dialog {
+    display: none;
     background: transparent;
     pointer-events: none;
     position: fixed;
@@ -156,40 +151,55 @@
   }
 
   .warn-connection-content {
-    position: absolute;
-    width: 170px;
-    border-radius: 10px;
+    border-radius: 4px;
     background: white;
-    border: 1px solid #ccc;
-    color: black;
-    box-shadow: 0 5px 40px rgba(0, 0, 0, 5%);
-    padding: .6em;
-    padding-bottom: none;
-    right: 1em;
-    top: 1em;
+    border: 1px solid #E7E7E7;
+    color: #333333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     transition: all 150ms ease-out;
+    position: absolute;
+    white-space: nowrap;
   }
 
-  .warn-connection-dialog.highlight .warn-connection-content {
-    background: #ff7575;
-    transform: scale(1.05);
+  .view-phone.is-landscape .warn-connection-content {
+    left: 23px;
+    bottom: 23px;
+  }
+
+  .view-tablet.is-landscape .warn-connection-content {
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+  }
+
+  .is-portrait .warn-connection-content {
+    transform: translate(-50%, calc(-100% - 15px));
   }
 
   .warn-connection-content p {
-    margin: 0; padding: 0;
+    display: inline-block;
+    margin: 0 8px 0 0;
+    line-height: 33px;
+    font-size: 11px;
   }
 
-  .warn-ui {
-    position: absolute;
-    bottom: 1em;
-    width: 100%;
-  }
-  .warn-connection-status {
-    color: red;
+  .warn-connection-content svg {
+    position: relative;
+    vertical-align: middle;
+    margin: 0 2px 2px 8px;
   }
 
-  .highlight .warn-connection-status {
-    color: white;
+  .view-desktop .warn-connection-content {
+    left: 1.5em;
+    bottom: 1.5em;
+  }
+
+  .view-desktop .warn-connection-content p {
+    font-size: 1.1em;
+  }
+
+  .is-offline .warn-connection-dialog {
+    display: block;
   }
 
   .is-offline .cs-panel * {
@@ -209,30 +219,57 @@
   }
 </style>
 
+<div class="warn-connection-dialog">
+  <div class="warn-connection-content">
+    <svg width="17" height="15" viewBox="0 0 17 15" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#8F0000" stroke="white" d="M16.07,12.98 L15.88,12.23 L9.51,1.21 C8.97,0.26,7.6,0.26,7.06,1.21 L0.69,12.23 C0.15,13.16,0.81,14.36,1.91,14.36 H14.65 C15.47,14.36,16.05,13.7,16.07,12.98 Z"/>
+      <path fill="white" stroke="white" d="M8.58,5.5 C8.35,5.28,8.5,5.35,8.21,5.32 C8.09,5.35,7.97,5.49,7.96,5.67 C7.97,5.79,7.98,5.92,7.98,6.04 L7.98,6.04 C7.99,6.17,8,6.31,8.01,6.43 L8.01,6.44 C8.03,6.92,8.06,7.41,8.09,7.9 L8.09,7.9 C8.12,8.39,8.14,8.88,8.17,9.37 C8.17,9.39,8.18,9.42,8.2,9.44 C8.23,9.46,8.25,9.47,8.28,9.47 C8.31,9.47,8.34,9.46,8.35,9.44 C8.37,9.43,8.38,9.4,8.39,9.35 L8.39,9.34 C8.39,9.24,8.4,9.15,8.4,9.05 L8.4,9.05 C8.41,8.96,8.41,8.86,8.42,8.75 C8.43,8.44,8.45,8.12,8.47,7.81 L8.47,7.81 C8.49,7.49,8.51,7.18,8.53,6.87 C8.55,6.46,8.56,6.05,8.59,5.64 L8.6,5.62 C8.6,5.57,8.59,5.53,8.58,5.5 L8.21,5.32 Z"/>
+      <circle fill="white" stroke="white" cx="8.3" cy="11.35" r="0.3"/>
+    </svg>
+    <p>You are offline. Trying to reconnect...</p>
+  </div>
+</div>
+
 <script>
   (function() {
     window.DS.connection = {
       warningShown: false,
       assets: {},
-      loadingAssetGroup: false
+      loadingAssetGroup: false,
+      retryDelay: 500
     };
 
     // @TODO this is POC code and can be cleaned up a bit more if we move forward
     // with the feature
 
+
+
     // The `window.globals.features` variable must be set in `webpack.dev.config` when testing locally - it is not enough
     // to have it in the data - but it must be set there as well.
-    var useConnectionMessages = window.AbortController != null && window.location.protocol != 'file:' &&
+    var useConnectionMessages = window.AbortController != null &&
+      window.location.protocol != 'file:' &&
       window.globals.features.indexOf('ConnectionMessages') != -1;
 
     window.DS.connection.useConnectionMessages = useConnectionMessages
 
-    var noConnection = 'retrying...';
-    var warnEl = document.querySelector('.warn-connection-dialog');
-    var statusEl = document.querySelector('.warn-connection-status');
-
     var assetCount = 0;
     var checkLoadedId;
+    var connectionSettings = window.globals.connectionSettings;
+
+    if (useConnectionMessages && connectionSettings != null) {
+      var contentEl = document.querySelector('.warn-connection-content');
+      var messageEl = contentEl.querySelector('p')
+
+      if (connectionSettings.useDarkTheme) {
+        contentEl.style.borderColor = '#BABBBA';
+        contentEl.style.backgroundColor = '#282828';
+        contentEl.style.color = '#FFFFFF';
+      }
+
+      if (connectionSettings.message != null) {
+        messageEl.textContent = window.decodeURIComponent(connectionSettings.message);
+      }
+    }
 
     function checkAssetsReady() {
       for (var i in DS.connection.assets) {
@@ -312,7 +349,7 @@
             if (DS.connection.lastSlideLoaded != null) {
               DS.connection.lastSlideLoaded();
             }
-          }, 300);
+          }, DS.connection.retryDelay);
         }
         return;
       }
@@ -322,33 +359,43 @@
           if (!DS.connection.assets[url].success) {
             DS.connection.assets[url].retry()
           }
-        }, 200);
+        }, DS.connection.retryDelay);
       }
     }
 
     function hideWarning() {
       document.body.classList.remove('is-offline');
       DS.connection.warningShown = false;
-      statusEl.innerHTML = 'connected!';
-      warnEl.style.display = 'none';
     }
     DS.connection.hideWarning = hideWarning
 
     function showWarning(btn) {
       document.body.classList.add('is-offline')
       DS.connection.warningShown = true;
-      warnEl.style.display = 'block';
-      statusEl.innerHTML = noConnection;
+      updateWarningPosition();
     }
 
-    function highlighWarning() {
-      warnEl.classList.add('highlight');
-      setTimeout(function() {
-        warnEl.classList.remove('highlight');
-      }, 500);
-    }
+    function updateWarningPosition() {
+      if (!DS.connection.warningShown) {
+        return;
+      }
 
-    statusEl.innerHTML = noConnection;
+      var isPortrait = document.body.classList.contains('is-portrait');
+      var warningEl = document.querySelector('.warn-connection-content');
+
+      if (isPortrait) {
+        var slide = document.querySelector('.primary-slide');
+        var slideRect = slide.getBoundingClientRect();
+
+        warningEl.style.top = `${slideRect.top}px`
+        warningEl.style.left = `${slideRect.left + slideRect.width / 2}px`
+      } else {
+        warningEl.style.top = null;
+        warningEl.style.left = null;
+      }
+
+      window.requestAnimationFrame(updateWarningPosition);
+    }
 
     // these will all be noops if the feature flag isn't set in
     // the data and `window.globals.features`
@@ -357,15 +404,6 @@
     DS.connection.assetFailed = assetFailed;
     DS.connection.stopAssetGroup = stopAssetGroup;
     DS.connection.startAssetGroup = startAssetGroup;
-
-    document.addEventListener('pointerup', e => {
-      if (e.target.classList.contains('cs-panel') ||
-        e.target.classList.contains('bottom-ui-bg')  ||
-        e.target.classList.contains('slide-object')  ||
-        e.target.id === 'nav-controls') {
-        highlighWarning();
-      }
-    });
   })();
 </script>
 

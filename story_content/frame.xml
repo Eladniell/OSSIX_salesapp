@@ -14,7 +14,7 @@
         <options>
           <option name="title_enabled" value="false">
             <options>
-              <option name="title_text" value="OSSIX Sales App" />
+              <option name="title_text" value="OSSIX Sales App_240822" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
@@ -103,6 +103,7 @@
       <control name="next" enabled="false" />
       <control name="swipeleft" enabled="false" />
       <control name="swiperight" enabled="false" />
+      <control name="fullScreenToggle" enabled="false" />
       <control name="submit" enabled="true" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
@@ -126,6 +127,7 @@
       <control name="next" enabled="true" />
       <control name="swipeleft" enabled="true" />
       <control name="swiperight" enabled="true" />
+      <control name="fullScreenToggle" enabled="false" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
@@ -149,6 +151,7 @@
       <control name="next" enabled="true" />
       <control name="swipeleft" enabled="false" />
       <control name="swiperight" enabled="true" />
+      <control name="fullScreenToggle" enabled="false" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
@@ -172,6 +175,7 @@
       <control name="next" enabled="false" />
       <control name="swipeleft" enabled="false" />
       <control name="swiperight" enabled="false" />
+      <control name="fullScreenToggle" enabled="false" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
@@ -195,6 +199,7 @@
       <control name="next" enabled="true" />
       <control name="swipeleft" enabled="true" />
       <control name="swiperight" enabled="true" />
+      <control name="fullScreenToggle" enabled="false" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
@@ -218,6 +223,7 @@
       <control name="next" enabled="false" />
       <control name="swipeleft" enabled="true" />
       <control name="swiperight" enabled="true" />
+      <control name="fullScreenToggle" enabled="false" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
@@ -1447,6 +1453,8 @@
       <string id="acc_three_image_count_of_total_item_visited">%count% of %total% item visited</string>
       <string id="three_image_count_of_total_visited">%count% of %total% visited</string>
       <string id="accessible_text">Accessible text</string>
+      <string id="acc_enter_fullscreen">Enter full-screen mode</string>
+      <string id="acc_exit_fullscreen">Exit full-screen mode</string>
       <string id="keyboardshortcuts_lower">Keyboard shortcuts</string>
       <string id="zoom_to_fit">Zoom to fit</string>
       <string id="modern_video_settings_close">close video settings</string>
@@ -1499,6 +1507,7 @@
       <string id="submit_shortcut">Submit slide</string>
       <string id="acctext_shortcut">Toggle accessible text</string>
       <string id="closedcaptions_shortcut">Toggle closed captions</string>
+      <string id="fullscreen_shortcut">Toggle full-screen mode</string>
       <string id="togglezoom">Toggle zoom to fit</string>
       <string id="outline">Menu</string>
       <string id="disabled_orientation">Please rotate your device</string>
@@ -1576,7 +1585,7 @@
             <slidelink slideid="_player.63UWzAoVGzT.6oRdwBJIB0S" displaytext="OB Sizes &amp;amp; Suggested Procedures" expand="false" type="slide" />
             <slidelink slideid="_player.63UWzAoVGzT.6iuM5gaHbfa" displaytext="OB Main Procedures" expand="false" type="slide" />
             <slidelink slideid="_player.63UWzAoVGzT.6qMD9UJ5A5Q" displaytext="Socket Preservation" expand="false" type="slide" />
-            <slidelink slideid="_player.63UWzAoVGzT.6fFlprcaTaw" displaytext="OSSIX™ Bone Compared with Xenograft" expand="false" type="slide" />
+            <slidelink slideid="_player.63UWzAoVGzT.6fFlprcaTaw" displaytext="Better bone quality for the patients" expand="false" type="slide" />
             <slidelink slideid="_player.63UWzAoVGzT.6dY1YEYJtbs" displaytext="OSSIX™ Bone Tips for Users" expand="false" type="slide" />
             <slidelink slideid="_player.63UWzAoVGzT.6fo7heLqgj1" displaytext="OB Competitors Comparison2" expand="false" type="slide" />
             <slidelink slideid="_player.63UWzAoVGzT.6Ihepkn4blZ" displaytext="Benefits of OSSIX™ Bone" expand="false" type="slide" />
